@@ -1,0 +1,37 @@
+body {
+    align-content: center;
+}
+
+.test {
+    position: relative;
+    align-content: center;
+    width: 50%;
+}
+
+.meme-top {
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    font-weight: 800;
+    -webkit-text-stroke: 2px black;
+}
+
+.meme-bottom {
+    color: white;
+    position: absolute;
+    left: 35%;
+    top: 85%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    font-weight: 800;
+    -webkit-text-stroke: 2px black;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
