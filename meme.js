@@ -11,17 +11,6 @@ document.addEventListener('DOMContentLoaded', function(){
     const form = document.querySelector('form');
 
     form.addEventListener('submit', function(e){
-        /* e.preventDefault();
-        imgURL.src = imgInput.value;
-        img.appendChild(imgURL);
-        img.classList.add('parent-img')
-        memeList.appendChild(img);
-        topText.innerHTML = topTextInput.value;
-        topText.classList.add('meme-top');
-        img.appendChild(topText);
-        bottomText.innerHTML = bottomTextInput.value;
-        bottomText.classList.add('meme-bottom');
-        img.appendChild(bottomText); */
         e.preventDefault();
         createParentDiv();
         createTopTextDiv();
