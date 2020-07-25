@@ -5,8 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const topTextInput = document.querySelector('#top-text');
     const topText = document.createElement('div');
     const bottomTextInput = document.querySelector('#bottom-text')
-    const bottomText = document.createElement('div');;
-    const submitBtn = document.querySelector('button');
+    const bottomText = document.createElement('div');
     const memeList = document.querySelector('#meme-list');
     const form = document.querySelector('form');
 
