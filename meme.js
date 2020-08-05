@@ -41,10 +41,4 @@ document.addEventListener('DOMContentLoaded', function(){
         createTopTextDiv();
         createBottomTextDiv();
     }
-    
-
-
-
-
-
 });
