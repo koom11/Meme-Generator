@@ -9,7 +9,13 @@ body {
     margin-bottom: 10px;
 }
 
+.text-input {
+    flex-basis: 0;
+}
 
+#button {
+    margin-top: 10px;
+}
 
 .parent-img {
     list-style: none;

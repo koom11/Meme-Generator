@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function(){
         newImg = document.createElement('li');
         const imgURL = document.createElement('img');
         imgURL.src = imgInput.value;
+        imgURL.classList.add('rounded');
         newImg.appendChild(imgURL);
         newImg.classList.add('parent-img');
         memeList.appendChild(newImg);
