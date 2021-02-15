@@ -1,44 +1,45 @@
 document.addEventListener('DOMContentLoaded', function(){
-    const img = document.createElement('div');
-    const imgInput = document.querySelector('#img-url');
-    const imgURL = document.createElement('img');
-    const topTextInput = document.querySelector('#top-text');
-    const topText = document.createElement('div');
+    let newImg = document.createElement('li');
+    let imgInput = document.querySelector('#img-url');
+    let topTextInput = document.querySelector('#top-text');
     const bottomTextInput = document.querySelector('#bottom-text')
-    const bottomText = document.createElement('div');
     const memeList = document.querySelector('#meme-list');
-    const form = document.querySelector('form');
+    let form = document.querySelector('form');
 
     form.addEventListener('submit', function(e){
         e.preventDefault();
-        createParentDiv();
-        createTopTextDiv();
-        createBottomTextDiv();
+        createNewDiv();
+        form.reset();
     
-    }, false);
+    });
 
     function createParentDiv(){
+        newImg = document.createElement('li');
+        const imgURL = document.createElement('img');
         imgURL.src = imgInput.value;
-        img.appendChild(imgURL);
-        img.classList.add('parent-img');
-        memeList.appendChild(img);
+        imgURL.classList.add('rounded');
+        newImg.appendChild(imgURL);
+        newImg.classList.add('parent-img');
+        memeList.appendChild(newImg);
     }
 
     function createTopTextDiv(){
+        const topText = document.createElement('h1');
         topText.innerHTML = topTextInput.value;
         topText.classList.add('meme-top');
-        img.appendChild(topText);
+        newImg.appendChild(topText);
     }
 
     function createBottomTextDiv(){
+        const bottomText = document.createElement('h1');
         bottomText.innerHTML = bottomTextInput.value;
         bottomText.classList.add('meme-bottom');
-        img.appendChild(bottomText);
+        newImg.append(bottomText);
     }
-    
 
-
-
-
-
-})
+    function createNewDiv(){
+        createParentDiv();
+        createTopTextDiv();
+        createBottomTextDiv();
+    }
+});
